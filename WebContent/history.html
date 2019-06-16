@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>history对象</title>
+</head>
+ <script type="text/javascript">
+        function GoBack() {
+            history.go(-1);
+        }
+
+        function GoForward() {
+            history.go(1);
+        }
+    </script>
+
+<body>
+    点击下面的锚点链接，添加历史列表项:    
+    <br />
+    <a href="https://www.sina.com.cn/">第一个锚点</a>
+    <a name="target1"></a>
+    <br />
+    <a href="https://www.baidu.com">第二个锚点</a>
+    <a name="target2"></a>
+    <br /><br />
+    使用下面按钮，实现返回前或下一个页面:
+    <form>
+       <input type="button"  value="返回前一个页面" onclick="GoBack();" />
+       <input type="button"  value="返回下一个页面" onclick="GoForward();" /> 
+    </form>
+</body>
+</html>

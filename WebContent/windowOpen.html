@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>window对象</title>
+<script type="text/javascript">
+    function windowOpen(){
+        var message=confirm("欢迎来到火狐，是否继续访问");
+        if(message==true){
+            var sr=prompt("请输入网址：https://home.firefoxchina.cn");
+            if(sr!=null){
+                window.open(sr,"_blank","width=600px,height=400px");
+            }
+            else{
+                alert("输入有误，再次输入！");
+            }
+        }else{
+            alert("谢谢！");
+        }
+    }
+
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="点击我，打开新窗口" onclick="windowOpen()" />
+</form>
+
+</body>
+</html>
